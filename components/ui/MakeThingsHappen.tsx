@@ -14,8 +14,8 @@ function LetsMakeThingsHappenSection() {
         <p className="text-3xl font-medium">Let&apos;s make things happen</p>
 
         <p className="my-10 text-xl">
-          Contact us today to learn more about how our digital marketing
-          services can help your business grow and succeed online.
+          Contact us today to learn more about how our services can help your
+          business grow and succeed online.
         </p>
 
         <Link
