@@ -20,39 +20,31 @@ import { Link as ScrollLink, Element } from "react-scroll";
 const services = [
   {
     icon: "/images/s_6.png",
-    title: "Web Design + Development",
+    title: "IT Consulting",
     description:
       "Take your business to the next level with our web design and development services",
+    pageLink: "/it-consulting",
   },
   {
     icon: "/images/s_1.png",
-    title: "Search Engine Optimization",
+    title: "Cybersecurity",
     description:
       "Get your website to the top of search engine results with our SEO services",
+    pageLink: "/cybersecurity",
   },
   {
     icon: "/images/s_5.png",
-    title: "Content Creation",
+    title: "Cloud Services",
     description:
       "Boost your brand's online presence with our social media marketing services",
+    pageLink: "/cloud-services",
   },
   {
     icon: "/images/s_3.png",
-    title: "Social Media Marketing",
+    title: "Backup and Disaster Recovery",
     description:
       "Interact with your customers and increase sales with our email marketing services",
-  },
-  {
-    icon: "/images/s_4.png",
-    title: "Email Marketing",
-    description:
-      "With our content creation services, we help businesses drive results",
-  },
-  {
-    icon: "/images/s_2.png",
-    title: "Pay-Per-Click Advertising",
-    description:
-      "Don't waste money on ineffective advertising. Our PPC services help you reach your target audience",
+    pageLink: "/backup-and-disaster-recovery",
   },
 ];
 
@@ -181,25 +173,25 @@ export default function Home() {
             <BoxReveal boxColor={"#3b82f6"} duration={0.5}>
               <p className="md:text-xl font-semibold flex gap-x-2 md:gap-x-4 items-center">
                 <PiCheckBold className="text-xl text-blue-500" />
-                Design
+                IT Consulting
               </p>
             </BoxReveal>
             <BoxReveal boxColor={"#3b82f6"} duration={0.5}>
               <p className="md:text-xl font-semibold flex gap-x-2 md:gap-x-4 items-center">
                 <PiCheckBold className="text-xl text-blue-500" />
-                Development
+                Cybersecurity
               </p>
             </BoxReveal>
             <BoxReveal boxColor={"#3b82f6"} duration={0.5}>
               <p className="md:text-xl font-semibold flex gap-x-2 md:gap-x-4 items-center">
                 <PiCheckBold className="text-xl text-blue-500" />
-                Marketing
+                Cloud Services
               </p>
             </BoxReveal>
             <BoxReveal boxColor={"#3b82f6"} duration={0.5}>
               <p className="md:text-xl font-semibold flex gap-x-2 md:gap-x-4 items-center">
                 <PiCheckBold className="text-xl text-blue-500" />
-                Strategy
+                Backup
               </p>
             </BoxReveal>
           </div>
@@ -262,7 +254,7 @@ export default function Home() {
             All of our services are designed to help your business stand out
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mt-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mt-10">
             {services.map((service) => (
               <div
                 key={service.title}
@@ -277,18 +269,24 @@ export default function Home() {
                 />
                 <h1 className="text-xl font-medium">{service.title}</h1>
                 <p className="text-gray-500">{service.description}</p>
+                <Link
+                  href={service.pageLink}
+                  className="w-[40%] px-4 py-2 text-black backdrop-blur-sm border border-black rounded-md hover:shadow-[0px_0px_4px_4px_rgba(0,0,0,0.1)] bg-white/[0.2] text-sm transition duration-200"
+                >
+                  Learn more{" "}
+                </Link>
               </div>
             ))}
           </div>
         </div>
       </Element>
 
-      <section className="py-20">
+      {/* <section className="py-20">
         <ScrollBasedVelocityDemo />
-      </section>
+      </section> */}
 
       <Element name="process">
-        <main className="md:px-0 mx-6 md:mx-auto">
+        <main className="md:px-0 mx-6 md:mx-auto py-20">
           <h1 className="text-3xl md:text-5xl md:text-center font-medium flex items-center gap-x-2 mx-auto justify-center">
             Our{" "}
             <span className="text-blue-500 flex gap-x-1 items-center">
