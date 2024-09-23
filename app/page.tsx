@@ -70,13 +70,9 @@ export default function Home() {
             <Link href={"/"} className="hover:text-blue-500">
               Home
             </Link>
-            <ScrollLink
-              to="about"
-              smooth={true}
-              className="hover:text-blue-500"
-            >
+            <Link href="/about" className="hover:text-blue-500">
               About
-            </ScrollLink>
+            </Link>
             <ScrollLink
               to="services"
               smooth={true}
@@ -271,7 +267,7 @@ export default function Home() {
                 <p className="text-gray-500">{service.description}</p>
                 <Link
                   href={service.pageLink}
-                  className="w-[40%] px-4 py-2 text-black backdrop-blur-sm border border-black rounded-md hover:shadow-[0px_0px_4px_4px_rgba(0,0,0,0.1)] bg-white/[0.2] text-sm transition duration-200"
+                  className="mx-auto w-[40%] px-4 py-2 text-black backdrop-blur-sm border border-black rounded-md hover:shadow-[0px_0px_4px_4px_rgba(0,0,0,0.1)] bg-white/[0.2] text-sm transition duration-200"
                 >
                   Learn more{" "}
                 </Link>
