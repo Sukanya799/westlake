@@ -209,15 +209,20 @@ export default function Home() {
               variant="outline"
               className="bg-white text-orange-500 hover:bg-orange-100 text-lg px-8 py-6 rounded-full shadow-lg transition-all duration-300 transform hover:scale-105"
             >
-              Get Started
-              <Zap className="ml-2 h-5 w-5" />
+              <Link
+                href="/meeting"
+                className="flex flex-row gap-2 items-center justify-center"
+              >
+                Book a Call
+                <Zap className="ml-2 h-5 w-5" />
+              </Link>
             </Button>
           </div>
         </section>
 
-        <section className="py-24 px-4 bg-gray-50">
+        {/* <section className="py-24 px-4 bg-gray-50">
           <LetsMakeThingsHappenSection />
-        </section>
+        </section> */}
       </main>
 
       <Footer />
