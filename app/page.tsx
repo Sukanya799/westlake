@@ -193,7 +193,7 @@ export default function Home() {
             </BoxReveal>
           </div>
 
-          <div className="md:flex items-center justify-between gap-y-4 my-10 gap-x-28 mx-auto">
+          {/* <div className="md:flex items-center justify-between gap-y-4 my-10 gap-x-28 mx-auto">
             <div className="md:w-2/5">
               <h1 className="text-2xl font-medium text-gray-600 w-4/5">
                 Trusted by fast moving brands worldwide
@@ -238,12 +238,12 @@ export default function Home() {
                 ]}
               />
             </section>
-          </div>
+          </div> */}
         </div>
       </main>
 
       <Element name="services">
-        <div className="md:px-0 mx-6 xl:w-4/5 2xl:w-[68%] md:mx-auto ">
+        <div className="md:px-0 mx-6 xl:w-4/5 2xl:w-[68%] md:mx-auto mt-8">
           <h1>
             <WordPullUpDemo />
           </h1>
