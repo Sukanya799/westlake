@@ -6,7 +6,7 @@ const services = [
   { name: "IT Consulting", href: "/it-consulting" },
   { name: "Cybersecurity", href: "/cybersecurity" },
   { name: "Cloud Services", href: "/cloud-services" },
-  { name: "Backup & Recovery", href: "/backup-recovery" },
+  { name: "Backup & Recovery", href: "/backup-and-disaster-recovery" },
 ];
 
 export default function Footer() {

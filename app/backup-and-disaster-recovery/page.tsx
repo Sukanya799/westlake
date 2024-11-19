@@ -16,6 +16,8 @@ import {
   Cloud,
   Database,
   Wifi,
+  HardDrive,
+  RefreshCw,
 } from "lucide-react";
 import {
   Accordion,
@@ -34,11 +36,10 @@ export default function Page() {
           <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
             <div className="max-w-3xl text-center text-white px-4">
               <h1 className="text-5xl font-bold mb-6">
-                Strengthen Your Defense with NIST-Powered Cybersecurity
+                Backup & Disaster Recovery Solutions
               </h1>
               <p className="text-xl mb-8">
-                Protect your business with our advanced, people-centric security
-                solutions
+                Protect your data and ensure business continuity with our comprehensive backup and recovery services
               </p>
               <Button className="bg-white text-blue-600 hover:bg-gray-100 text-lg py-6 px-8">
                 <Link
@@ -56,17 +57,16 @@ export default function Page() {
         <section className="py-20 px-4">
           <div className="max-w-5xl mx-auto text-center">
             <h2 className="text-4xl font-semibold mb-6 text-gray-800">
-              IT Security You Can Count On
+              Complete Data Protection
             </h2>
             <p className="text-xl text-gray-600 mb-12">
-              Our managed security services combine cutting-edge tools with
-              expert analysis to keep your organization safe.
+              Secure your business data with our enterprise-grade backup solutions and rapid recovery capabilities
             </p>
             <div className="grid md:grid-cols-3 gap-12">
               {[
-                { icon: Shield, label: "Advanced Protection" },
-                { icon: Server, label: "Secure Infrastructure" },
-                { icon: Users, label: "Expert Team" },
+                { icon: HardDrive, label: "Data Backup" },
+                { icon: RefreshCw, label: "Quick Recovery" },
+                { icon: Shield, label: "Data Security" },
               ].map((item, i) => (
                 <div key={i} className="flex flex-col items-center">
                   <item.icon className="h-16 w-16 text-blue-500 mb-4" />
@@ -82,16 +82,40 @@ export default function Page() {
         <section className="py-20 px-4 bg-gradient-to-b from-blue-50 to-white">
           <div className="max-w-5xl mx-auto">
             <h2 className="text-4xl font-semibold mb-12 text-center text-gray-800">
-              Comprehensive Security Solutions
+              Our Backup & Recovery Services
             </h2>
             <div className="grid md:grid-cols-3 gap-8">
               {[
-                { icon: Cloud, label: "Cloud Services" },
-                { icon: Database, label: "Data Management" },
-                { icon: Wifi, label: "Network Solutions" },
-                { icon: Lock, label: "Access Control" },
-                { icon: HeadsetIcon, label: "24/7 Support" },
-                { icon: BarChart, label: "Business Continuity" },
+                { 
+                  icon: HardDrive, 
+                  label: "Automated Backups",
+                  description: "Regular automated backups of your critical data"
+                },
+                { 
+                  icon: RefreshCw, 
+                  label: "Rapid Recovery",
+                  description: "Quick data recovery to minimize downtime"
+                },
+                { 
+                  icon: Cloud, 
+                  label: "Cloud Backup",
+                  description: "Secure cloud-based backup solutions"
+                },
+                { 
+                  icon: Shield, 
+                  label: "Data Protection",
+                  description: "Advanced encryption and security measures"
+                },
+                { 
+                  icon: HeadsetIcon, 
+                  label: "24/7 Support",
+                  description: "Round-the-clock technical assistance"
+                },
+                { 
+                  icon: BarChart, 
+                  label: "Business Continuity",
+                  description: "Comprehensive disaster recovery planning"
+                },
               ].map((item, i) => (
                 <div
                   key={i}
@@ -102,8 +126,7 @@ export default function Page() {
                     {item.label}
                   </h3>
                   <p className="text-gray-600">
-                    Comprehensive {item.label.toLowerCase()} to ensure your
-                    business stays secure and operational.
+                    {item.description}
                   </p>
                 </div>
               ))}
@@ -114,11 +137,10 @@ export default function Page() {
         <section className="py-20 px-4 bg-blue-600 text-white">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-4xl font-semibold mb-6">
-              Partner with Us for Unmatched Security
+              Protect Your Business Data Today
             </h2>
             <p className="text-xl mb-8">
-              We deliver a strong partnership built on a foundation of
-              integrity, innovation, and exceptional customer service.
+              Don't wait for a disaster to strike. Ensure your business continuity with our comprehensive backup and recovery solutions.
             </p>
             <Button className="bg-white text-blue-600 hover:bg-gray-100 text-lg py-6 px-8">
               <Link
@@ -140,46 +162,34 @@ export default function Page() {
             <Accordion type="single" collapsible className="w-full">
               <AccordionItem value="item-1">
                 <AccordionTrigger>
-                  What is NIST-powered cybersecurity?
+                  Why do I need backup and disaster recovery?
                 </AccordionTrigger>
                 <AccordionContent>
-                  NIST-powered cybersecurity refers to security practices and
-                  frameworks based on guidelines set by the National Institute
-                  of Standards and Technology. It provides a comprehensive
-                  approach to managing and reducing cybersecurity risks.
+                  Backup and disaster recovery solutions protect your business from data loss due to hardware failure, cyber attacks, natural disasters, or human error. They ensure business continuity and minimize downtime in case of emergencies.
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-2">
                 <AccordionTrigger>
-                  How can managed security services benefit my business?
+                  How often should I backup my data?
                 </AccordionTrigger>
                 <AccordionContent>
-                  Managed security services provide expert monitoring, threat
-                  detection, and response capabilities. They can help reduce the
-                  risk of cyber attacks, ensure compliance with regulations, and
-                  allow your team to focus on core business activities.
+                  The frequency of backups depends on your business needs. We typically recommend daily backups for critical data, with some businesses requiring real-time backup solutions for maximum protection.
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-3">
                 <AccordionTrigger>
-                  What types of businesses do you serve?
+                  What types of backup do you offer?
                 </AccordionTrigger>
                 <AccordionContent>
-                  We serve businesses of all sizes across various industries.
-                  Our solutions are scalable and can be tailored to meet the
-                  specific needs of small startups, mid-sized companies, and
-                  large enterprises.
+                  We offer various backup solutions including on-site backups, cloud backups, hybrid solutions, and automated backup systems. Our team will help you choose the best option based on your specific needs and requirements.
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-4">
                 <AccordionTrigger>
-                  How do you ensure 24/7 protection?
+                  How quickly can you restore our data?
                 </AccordionTrigger>
                 <AccordionContent>
-                  Our team of security experts works around the clock, utilizing
-                  advanced monitoring tools and automated systems to provide
-                  continuous protection. We have multiple layers of redundancy
-                  to ensure uninterrupted service.
+                  Our recovery times vary depending on the amount of data and the type of backup solution. We prioritize critical systems and can often restore essential services within hours, with complete recovery typically completed within an agreed-upon timeframe.
                 </AccordionContent>
               </AccordionItem>
             </Accordion>
