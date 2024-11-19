@@ -27,10 +27,13 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 export default function Page() {
   return (
     <div className="flex flex-col w-full overflow-hidden theme-cloud-services">
+      <Navbar />
       {/* Hero Section */}
       <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-gradient-to-br from-blue-800 via-purple-900 to-indigo-900">
         <div className="absolute inset-0">
@@ -253,6 +256,7 @@ export default function Page() {
           </div>
         </div>
       </section>
+      <Footer />
     </div>
   );
 }

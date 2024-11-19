@@ -16,10 +16,14 @@ import {
   Zap,
   ArrowUpCircle,
 } from "lucide-react";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 export default function ITConsulting() {
   return (
+    <>
     <main className="theme-it-consulting">
+      <Navbar />
       {/* Hero Section */}
       <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-gradient-to-br from-indigo-800 via-purple-900 to-blue-900">
         <div className="absolute inset-0">
@@ -258,5 +262,7 @@ export default function ITConsulting() {
         </div>
       </section>
     </main>
+    <Footer />
+    </>
   );
 }
